@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sakksh Wedding RSVP</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="welcome">
+    <h1>Welcome to Sakksh Wedding Celebrations</h1>
+    <button onclick="enterWebsite()">Enter</button>
+  </section>
+
+  <section id="events" class="hidden">
+    <h2>Wedding Events</h2>
+    <ul>
+      <li><strong>Engagement:</strong> May 5, 2025 | 2:00 PM - 5:00 PM</li>
+      <li><strong>Bride & Groom Ceremony:</strong> May 12, 2025 | 9:00 AM - 11:00 AM</li>
+      <li><strong>Haldi & Mehendi:</strong> May 14, 2025 | After 9 AM<br>Dress Code: Yellow Traditional / Bright Colors</li>
+      <li><strong>Cocktail Party:</strong> May 16, 2025 | Evening<br>Dress Code: Indo-western</li>
+      <li><strong>Marriage:</strong> May 15, 2025 | 10:00 AM - 3:00 PM<br>Dress Code: Indian Traditional</li>
+      <li><strong>Satyanarayana Vratham:</strong> May 17, 2025 | 10:00 AM</li>
+    </ul>
+    <button onclick="goToRSVP()">RSVP Now</button>
+  </section>
+
+  <section id="rsvp" class="hidden">
+    <h2>RSVP Now</h2>
+    <p>Scan the QR or fill in the form below to confirm your attendance</p>
+    <img src="rsvp_qr.png" alt="QR Code" width="200" />
+    <form action="https://submit-form.com/Dx4Tod5j1" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <select name="attendance" required>
+        <option value="">Select Attendance</option>
+        <option value="Will Attend">Will Attend</option>
+        <option value="Will Not Attend">Will Not Attend</option>
+      </select>
+      <input type="hidden" name="_redirect" value="https://sakksh15.github.io/rsvp/wedding-rsvp/thank-you.html" />
+      <button type="submit">Submit RSVP</button>
+    </form>
+  </section>
+
+  <section id="thank-you" class="hidden">
+    <h2>Thank you for your RSVP!</h2>
+    <p>We look forward to seeing you at the celebrations!</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
