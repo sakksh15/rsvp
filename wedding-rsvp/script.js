@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Send data to Google Sheets
-        fetch("https://submit-form.com/form_v1_YxkhAAhfHnrKT1NJR1RWuDbM", {
+        fetch("https://submit-form.com/form_v1_lMcSTDPBTtGGpvtEfFUaEiqn", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ 
