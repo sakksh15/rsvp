@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakksh Wedding RSVP</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Welcome Page -->
+    <section id="welcome" class="welcome">
+        <h1>Welcome to Sakksh Wedding Saga</h1>
+        <button onclick="enterWebsite()">Enter</button>
+    </section>
+
+    <!-- Event Pages -->
+    <section id="events" class="hidden">
+        <h2>Wedding Events</h2>
+        <div class="event">
+            <h3>Engagement</h3>
+            <p>Date: May 5, 2025 | Time: 2:00 PM - 5:00 PM</p>
+            <p>Dress Code: Formal</p>
+        </div>
+        <div class="event">
+            <h3>Haldi</h3>
+            <p>Date: May 14, 2025 | Time: After 9 AM</p>
+            <p>Dress Code: Yellow Traditional</p>
+        </div>
+        <div class="event">
+            <h3>Mehendi</h3>
+            <p>Date: May 14, 2025 | Time: Evening</p>
+            <p>Dress Code: Bright Colours</p>
+        </div>
+        <div class="event">
+            <h3>Cocktail Party</h3>
+            <p>Date: May 16, 2025 | Time: Evening</p>
+            <p>Dress Code: Indo-Western</p>
+        </div>
+        <div class="event">
+            <h3>Marriage Ceremony</h3>
+            <p>Date: May 15, 2025 | Time: 10 AM - 3 PM</p>
+            <p>Dress Code: Indian Traditional</p>
+        </div>
+        <button onclick="goToRSVP()">RSVP Now</button>
+    </section>
+
+    <!-- RSVP Form -->
+    <section id="rsvp" class="hidden">
+        <h2>RSVP Now</h2>
+        <p>Scan the QR code or fill in the form below to confirm your attendance.</p>
+        <img src="rsvp_qr.png" alt="RSVP QR Code">
+        <form>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <select id="attendance" required>
+                <option value="">Select Attendance</option>
+                <option>Will Attend</option>
+                <option>Won't Attend</option>
+            </select>
+            <button type="submit">Submit RSVP</button>
+        </form>
+    </section>
+
+    <!-- Thank You Message (Hidden by Default) -->
+    <section id="thank-you" class="hidden">
+        <h2>Thank You!</h2>
+        <p>Your RSVP has been successfully submitted.</p>
+        <p>We can't wait to celebrate with you!</p>
+    </section>
+</body>
+</html>
